@@ -1,0 +1,217 @@
+/* =============== */
+/*   BASIS STIJL   */
+/* =============== */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: #ffffff;
+  color: #0a1a33;
+}
+
+/* =============== */
+/*     NAVBAR      */
+/* =============== */
+.navbar {
+  width: 100%;
+  background-color: #ffffff;
+  border-bottom: 1px solid rgba(10,26,51,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 15px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-logo a {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #0a1a33;
+  text-decoration: none;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  font-weight: 500;
+  color: #334366;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #1E3A8A;
+}
+
+.nav-login {
+  background-color: #1E3A8A;
+  color: #ffffff !important;
+  padding: 8px 18px;
+  border-radius: 25px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.nav-login:hover {
+  background-color: #0a1a33;
+  color: #fff;
+}
+
+/* =============== */
+/*   HERO SECTION  */
+/* =============== */
+.hero {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 600px;
+  color: #ffffff;
+  text-align: center;
+  overflow: hidden;
+}
+
+.hero-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 20%;
+  z-index: 0;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(10, 26, 51, 0.55);
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 650px;
+  padding: 20px;
+}
+
+.hero h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+}
+
+.cta-button {
+  background-color: #ffffff;
+  color: #0a1a33;
+  padding: 15px 35px;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 50px;
+  transition: 0.3s;
+  box-shadow: 0 0 10px rgba(10,26,51,0.2);
+}
+
+.cta-button:hover {
+  background-color: #1E3A8A;
+  color: #fff;
+}
+
+/* =============== */
+/*   INFO BLOKKEN  */
+/* =============== */
+.info-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  padding: 80px 40px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.info-card {
+  border: 2px solid #1E3A8A;
+  border-radius: 20px;
+  padding: 30px;
+  text-align: center;
+  transition: 0.3s;
+  background-color: #f8faff;
+}
+
+.info-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(30,58,138,0.3);
+}
+
+.info-card .icon {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.info-card h3 {
+  color: #1E3A8A;
+  margin-bottom: 10px;
+}
+
+.info-card p {
+  color: #334366;
+}
+
+/* =============== */
+/*     FOOTER      */
+/* =============== */
+.footer {
+  border-top: 1px solid rgba(10,26,51,0.2);
+  padding: 40px 20px;
+  text-align: center;
+  color: #334366;
+  background-color: #f3f6fb;
+}
+
+.footer a {
+  color: #1E3A8A;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer a:hover {
+  color: #0a1a33;
+}
+
+.socials {
+  margin-bottom: 15px;
+}
+
+.socials a {
+  margin: 0 10px;
+  color: #334366;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.socials a:hover {
+  color: #1E3A8A;
+}
